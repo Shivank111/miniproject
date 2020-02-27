@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Registration</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen'>
+
+    <style>
+
+        .wrap{
+            max-width:400px;
+            border-radius:20px;
+            margin:auto;
+            background: rgba(0,0,0,0.8);
+            box-sizing:border-box;
+            padding:40px;
+            color:#fff;
+            margin-top:100px;
+        }
+	    .h2{
+            text-align:center;
+          }
+        body{
+            background-color: #940fe2;
+        }
+		input[type=text],input[type=password],input[type=email]
+		  {
+		  width:300px;
+		  box-sizing:border-box;
+		  padding:12px 5px;
+		  background:rgba(0,0,0,0.10);
+		  outline:none;
+		  border:none;
+		  border-bottom:1px dotted #fff;
+		  color:#fff;
+		  border-radius:5px;
+		  margin:5px;
+		  font-weight:bold;
+		  }
+
+
+	</style>
+    </head>
+    <body>
+	<div class='wrap'>
+	<h2 class='h2'>Sign Up</h2>
+        <form action="register" method="post">
+         {% csrf_token %}
+            <input type="text"  name="first_name" placeholder="First Name" required><br>
+            <input type="text"  name="last_name" placeholder="Last Name" required><br>
+            <input type="text"  name="username" placeholder="Username" required><br>
+            <input type="email"  name="email" placeholder="email" required><br>
+            <input type="password"  name="password1" placeholder="Password" required><br>
+            <input type="password"  name="password2" placeholder="Confirm Password"><br>
+            <input type="submit" value = SignUp>
+        </form>
+    </div>
+    <div>
+        {% for i in messages %}
+            <h3 align = center>{{i}}</h3>
+        {% endfor %}
+    </div>
+    </body>
+	</html>
