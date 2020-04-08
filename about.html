@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About-us Page</title>
+	<style>
+	    body{
+	        margin: 0;
+	        padding: 0;
+        }
+        .container{
+	        width:100%;
+	        height:auto;
+	        display: flex;
+	        align-items: flex-start;
+	        flex-wrap: wrap;
+        }
+        .about{
+	    width:100%;
+	    height: 400px;
+	    background-image: url(https://i.ibb.co/9bZPZgp/dsc4641-copy-880074f1fd6d9422f6c3fded126a54c8.jpg); /*Couldn't link the image so i used linear-gradient background LOL!*/
+	    background-size: cover;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    flex-wrap: wrap;
+        }
+    .text{
+	font-size: 30px;
+	color:#fff;
+	font-family: sans-serif;
+	text-shadow: 0px 15px 12px #000;
+    }
+   .line{
+	width:200px;
+	height: 8px;
+	background-color: #17ff8d;
+	display: block;
+	position: relative;
+	border-radius: 5px;
+	left:10%;
+	box-shadow: 0px 15px 12px 0px #000;
+    }
+   .content{
+	width:100%;
+	height:auto;
+	background-color: #17ff8d;
+	font-size: 23px;
+	font-family: audiowide;
+	color:#333;
+	line-height: 30px;
+	text-align: center;
+    }
+   b{
+	font-size: 50px;
+	color:#000;
+	font-weight: 500px;
+    }
+    footer{
+	width:100%;
+	height: auto;
+	background-color: #333;
+	color: #17ff8d;
+	font-size: 23px;
+	text-align: center;
+	line-height: 50px;
+    }
+	h2{
+	text-align: center;
+	}
+	.row {
+  margin: 5px -14px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  
+  padding:80px;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    
+    margin-bottom: 20px;
+  }
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display:table;
+  clear: both;
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+  margin:20px;
+}
+ .block {
+  display: block;
+  width: 10%;
+  border: none;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+	</style>
+	
+</head>
+<body>
+	<div class="container">
+		<div class="about">
+			<div class="text">
+				
+				<h1>Mumbai</h1>
+				<div class="line"></div>
+			</div>
+		</div>
+		<div class="content">
+			<p><b>M</b>umbai is the capital city of the Indian state of Maharashtra. According to United Nations, as of 2018, Mumbai was the second most populous city in India after Delhi and the seventh most populous city in the world with a population of 19.98 million.[18] As per Indian government population census of 2011, Mumbai was the most populous city in India with an estimated city proper population of 12.5 million living under Municipal Corporation of Greater Mumbai. Mumbai is the centre of the Mumbai Metropolitan Region, the sixth most populous metropolitan area in the world with a population of over 23.64 million. Mumbai lies on the Konkan coast on the west coast of India and has a deep natural harbour.</p>
+		</div>
+		</div>
+		<h2><u><i>Places to visit in Mumbai</i></u></h2>
+		<h3><br>Here are the top 3 tourists attractions to see in Mumbai:</h3>
+		<!--<footer>Copyright &copy; U Can Code 2019 Home|About us|Services|Contact Us</footer>-->
+		
+    <div class="row">
+        <div class="column">
+            <div class="card">
+			    <img src="marine_drive.jpg" alt="Marine Drive" style="width:50%">
+			    <h3>Marine drive</h3>
+                <p><h4>Marine Drive is a 3.6-kilometre-long Promenade along the Netaji Subhash Chandra Bose Road in South Mumbai in the city of Mumbai, India.</h4></p>
+            
+		    </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="gateway.jpg" alt="Gateway of india" style="width:50%">
+                <h3>Gateway of India</h3>
+                <p><h4>The Gateway of India is an arch-monument built in the early twentieth century in the city of Mumbai, in the Indian state of Maharashtra</h4></p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="juhu_beach.jpg" alt="juhu beach" style="width:50%">
+                <h3>Juhu Beach</h3>
+                <p><h4>Juhu Beach is located on the shores of the Arabian Sea. It stretches for six kilometres up to Versova.</h4></p>
+            </div>
+        </div>
+	</div>
+	
+	<button class="block">View Policy</button>
+ </body>
+ </html>
